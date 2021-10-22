@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+      <div class="Toplogo">
+          <img class="firstlogo" src="https://www.mercedes-benz.fr/passengercars/_jcr_content/logo.noscale.cloudsvg.imageLogo.20180312094632.svg" alt="Mercedes-Benzlogo">
+          <img class="secondlogo" src="https://www.mercedes-benz.fr/passengercars/_jcr_content/logo.noscale.cloudsvg.imageClaim.20180312094632.svg" alt="Mercedes-Benzquote">
+      </div>
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-lg-9">
+          <div class="card">
+            <div class="table-responsive">
+              <table class="table table-borderless table-shopping-cart">
+                <thead class="text-muted">
+                  <tr class="small text-uppercase">
+                    <th scope="col">Car Model</th>
+                    <th scope="col" >Quantity</th>
+                    <th scope="col" >Price</th>
+              
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="item1">
+                    <td>
+                      <figure class="itemside align-items-center">
+                        <div class="aside">
+                          <img
+                            src="https://catalogue.automobile.tn/big/2020/06/24445.jpg?t=1591312012"
+                            class="img-sm"
+                          />
+                        </div>
+                        <figcaption class="info">
+                          <a
+                            href="https://www.mercedes-benz.fr/passengercars/mercedes-benz-cars/models/c-class/coupe-c205/explore/amg.module.html" target="_blank"
+                            class="title text-dark"
+                            data-abc="true"
+                            >Mercedes-Benz Class C coupé</a
+                          >
+                          <p class="text-muted small">
+                            Carburant:Diesel <br />
+                            Puissance:143 kW (194 ch) <br />
+                            Boîte de vitesses:Boîte de vitesses automatique
+                            9G-TRONIC <br />
+                            Emissions de CO₂ combinées: 133 g/km <br />
+                            Consommation combinée:5,1 l/100km <br />
+                          </p>
+                        </figcaption>
+                      </figure> 
+                    </td>
+                    <td>
+                       <button onclick="addItem(1)">+ </button>
+
+                        <input type="text" id="merc" value=1>
+                      <button onclick='rmvItem(1)'>
+                          -
+                      </button>
+                    </td>
+                    <td>
+                      <div class="price-wrap">
+                        <var class="price" id="price1">51599</var>
+                        <small class="text-muted"> € </small>
+                      </div>
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <a
+                        data-original-title="Save to Wishlist"
+                        title=""
+                        href=""
+                        class="btn btn-light"
+                        data-toggle="tooltip"
+                        data-abc="true"
+                        onclick="switchWishList(1)"
+                      >
+                        <i class="fa fa-heart" id='heart1'></i
+                      ></a>
+                      <a  href="" class="btn btn-light" data-abc="true" onclick="removeElement(1)">
+                        Remove</a
+                      >
+                    </td>
+                  </tr>
+                  <tr id="item2">
+                    <td>
+                      <figure class="itemside align-items-center">
+                        <div class="aside">
+                          <img
+                            src="https://catalogue.automobile.tn/big/2021/03/46562.webp?t=1629715631"
+                            class="img-sm"
+                          />
+                        </div>
+                        <figcaption class="info">
+                          <a
+                            href="https://www.mercedes-benz.fr/passengercars/mercedes-benz-cars/models/e-class/coupe-c238-fl/amg.html " target="_blank"
+                            class="title text-dark"
+                            data-abc="true"
+                            >Mercedes-Benz Class E</a
+                          >
+                          <p class="text-muted small">
+                            Carburant: Diesel <br />
+                            Puissance: 143 kW (194 ch) <br />
+                            Boîte de vitesses: Boîte de vitesse automatique à 9
+                            rapports 9G-TRONIC <br />
+                            Emissions de CO₂combinées: 143 g/km <br />
+                            Consommation combinée: 5,4 l/100km <br />
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </td>
+                    <td>
+                      <button onclick="addItem(2)">+ </button>
+
+                        <input type="text" id="merc2" value=1>
+                      <button onclick='rmvItem(2)'>
+                          -
+                      </button>
+                    </td>
+                    <td>
+                      <div class="price-wrap">
+                        <var class="price" id="price2">65051</var>
+                        <small class="text-muted">€</small>
+                      </div>
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <a
+                        data-original-title="Save to Wishlist"
+                        title=""
+                        href=""
+                        class="btn btn-light"
+                        data-toggle="tooltip"
+                        data-abc="true"
+                        onclick="switchWishList(2)"
+                      >
+                        <i class="fa fa-heart" id='heart2'></i
+                      ></a>
+                      <a href="" class="btn btn-light btn-round" data-abc="true" onclick="removeElement(2)">Remove
+
+                      </a>
+                    </td>
+                  </tr>
+                  <tr id="item3">
+                    <td>
+                      <figure class="itemside align-items-center">
+                        <div class="aside">
+                          <img
+                            src="https://catalogue.automobile.tn/big/2021/02/46286.jpg?t=1612802768"
+                            class="img-sm"
+                          />
+                        </div>
+                        <figcaption class="info">
+                          <a
+                            href="https://www.mercedes-benz.fr/passengercars/mercedes-benz-cars/models/cla/coupe-c118/amg.html" target="_blank"
+                            class="title text-dark"
+                            data-abc="true"
+                            >Mercedes-Benz CLA</a
+                          >
+                          <p class="small text-muted">
+                            Carburant: Diesel <br />
+                            Puissance: 85 kW (116 ch) <br />
+                            Boîte de vitesses: Boite de vitesses manuelle à 6
+                            rapports <br />
+                            Emissions de CO₂ combinées: 128 g/km <br />
+                            Consommation combinée: 4,9 l/100km <br />
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </td>
+                    <td>
+                      <button onclick="addItem(3)">+ </button>
+
+                        <input type="text" id="merc3" value=1>
+                      <button onclick='rmvItem(3)'>
+                          -
+                      </button>
+                    </td>
+                    <td>
+                      <div class="price-wrap">
+                        <var class="price" id="price3">36549</var>
+                        <small class="text-muted">€</small>
+                      </div>
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <a
+                        data-original-title="Save to Wishlist"
+                        title=""
+                        href=""
+                        class="btn btn-light"
+                        data-toggle="tooltip"
+                        data-abc="true"
+                        onclick="switchWishList(3)"
+                      >
+                        <i class="fa fa-heart" id='heart3'></i
+                      ></a>
+                      <a
+                        href="" class="btn btn-light btn-round" data-abc="true" onclick="removeElement(3)">
+                        Remove</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </aside>
+          <div class="card">
+            <div class="card-body">
+             
+              
+              <div class="dlist-align">
+                <dt>Total:</dt>
+                <dd class="text-right text-dark b ml-3">
+                  <strong>$</strong><strong id='total'>153199</strong>
+                </dd>
+              </div>
+              <hr />
+              <a
+                href="#"
+                class="Confirmbutton"
+                data-abc="true"
+              >
+                Make Purchase
+              </a>
+              <a
+                href="#"
+                class="Continuebutton"
+                data-abc="true"
+                >Continue Shopping</a
+              >
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/e35dec94f9.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>

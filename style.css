@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+body {
+  background-image: url(https://i.pinimg.com/originals/76/c8/4d/76c84da58efc05c21703db17fccb552d.png);
+  background-position: center;
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+}
+
+.Toplogo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  margin-top: 100px;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.4rem;
+}
+
+.img-sm {
+  width: 170px;
+  height: 130px;
+}
+
+.itemside .info {
+  padding-left: 15px;
+  padding-right: 7px;
+}
+
+.table-shopping-cart .price-wrap {
+  line-height: 1.2;
+}
+
+.table-shopping-cart .price {
+  font-weight: bold;
+  margin-right: 5px;
+  display: block;
+}
+
+.text-muted {
+  color: whitesmoke !important;
+}
+figcaption > a:visited {
+  text-decoration: none;
+  color: white;
+}
+figcaption > a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Confirmbutton {
+  margin: 5px 10px 5px 10px;
+  border-style: groove !important;
+  width: 100%;
+  font-size: 40px;
+  color: whitesmoke;
+  border: whitesmoke;
+  border-radius: 50px;
+}
+
+.Confirmbutton:hover {
+  color: #ffffff;
+  background-color: #f44336;
+  border-color: whitesmoke;
+}
+
+.Continuebutton {
+  margin: 5px 10px 5px 10px;
+
+  border-style: groove !important;
+  width: 100%;
+  font-size: 40px;
+  color: whitesmoke;
+  border: whitesmoke;
+  border-radius: 50px;
+}
+
+.Continuebutton:hover {
+  color: #ffffff;
+  background-color: #f44336;
+  border-color: whitesmoke;
+  border-style: groove;
+}
+
+.card {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  word-wrap: break-word;
+  background-blend-mode: color-burn;
+  background-clip: border-box;
+  border-radius: 0px;
+}
+
+.itemside {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.redHeart {
+  color: red;
+}
+
+.dlist-align {
+  color: whitesmoke;
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+[class*="dlist-"] {
+  margin-bottom: 5px;
+}
+
+.price {
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+.btn.btn-out {
+  outline: 1px solid #fff;
+  outline-offset: -5px;
+}
+
+.btn-main {
+  border-radius: 2px;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 10px 19px;
+  margin: 50px;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-light {
+  color: #ffffff;
+  border-color: #f8f9fa;
+  font-size: 20px;
+}
+
+#merc {
+  width: 40px;
+  border-color: whitesmoke;
+  border-radius: 70px;
+}
+
+#merc2 {
+  width: 40px;
+  border-color: whitesmoke;
+  border-radius: 70px;
+}
+#merc3 {
+  width: 40px;
+  border-color: whitesmoke;
+  border-radius: 70px;
+}
+
+#item1 > td.text-right.d-none.d-md-block > a:nth-child(2) {
+  margin: 20px 10px;
+  padding: 0px 40px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item2 > td.text-right.d-none.d-md-block > a.btn.btn-light.btn-round {
+  margin: 20px 10px;
+  padding: 0px 40px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item3 > td.text-right.d-none.d-md-block > a.btn.btn-light.btn-round {
+  margin: 20px 10px;
+  padding: 0px 40px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item1 > td:nth-child(3) > div {
+  margin: 0px 50px;
+  padding: 0px 65px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item2 > td:nth-child(3) > div {
+  margin: 0px 50px;
+  padding: 0px 65px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item3 > td:nth-child(3) > div {
+  margin: 0px 50px;
+  padding: 0px 65px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body > div.container-fluid > div > div > div > div {
+  margin: 0px 50px;
+  padding: 0px 65px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: groove;
+  border-radius: 50px;
+  border-color: whitesmoke;
+}
+
+body
+  > div.container-fluid
+  > div
+  > aside
+  > div
+  > div
+  > table
+  > thead
+  > tr
+  > th:nth-child(1) {
+  color: indianred;
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+body
+  > div.container-fluid
+  > div
+  > aside
+  > div
+  > div
+  > table
+  > thead
+  > tr
+  > th:nth-child(2) {
+  color: indianred;
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+body
+  > div.container-fluid
+  > div
+  > aside
+  > div
+  > div
+  > table
+  > thead
+  > tr
+  > th:nth-child(3) {
+  color: indianred;
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#item2 > td:nth-child(1) > figure > figcaption > a {
+  margin-left: -122px;
+}
+
+#item3 > td:nth-child(1) > figure > figcaption > a {
+  margin-left: -50px;
+}
